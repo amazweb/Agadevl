@@ -58,11 +58,11 @@ export const Hero = () => {
           <div className="flex justify-center animate-scale-in">
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-amber-400 blur-xl opacity-50 animate-pulse"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-primary overflow-hidden glow-primary">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-primary overflow-hidden glow-primary">
                 <img
                   src={profileAvatar}
                   alt="Profile"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
