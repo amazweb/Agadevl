@@ -14,7 +14,7 @@ export const Hero = () => {
                 Hi 👋 My name is
               </h2>
               <h1 className="text-5xl md:text-7xl font-bold gradient-text">
-                Your Name
+                Abdellah Afraoua
               </h1>
               <p className="text-2xl md:text-3xl text-foreground font-semibold">
                 Full-Stack Developer
