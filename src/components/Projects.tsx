@@ -10,6 +10,7 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB"],
     github: "#",
     demo: "#",
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
   },
   {
     title: "Task Management App",
@@ -17,6 +18,7 @@ const projects = [
     tags: ["Next.js", "TypeScript", "PostgreSQL"],
     github: "#",
     demo: "#",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
   },
   {
     title: "Social Media Dashboard",
@@ -24,6 +26,7 @@ const projects = [
     tags: ["React", "Redux", "Chart.js"],
     github: "#",
     demo: "#",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
   },
 ];
 
@@ -39,9 +42,16 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <Card
               key={project.title}
-              className="bg-card border-border hover:border-primary transition-all duration-300 card-hover"
+              className="bg-card border-border hover:border-primary transition-all duration-300 card-hover overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                />
+              </div>
               <CardHeader>
                 <CardTitle className="text-2xl text-foreground">{project.title}</CardTitle>
                 <CardDescription className="text-muted-foreground">
