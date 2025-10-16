@@ -25,9 +25,12 @@ export const Hero = () => {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-primary to-amber-400 hover:opacity-90 text-accent-foreground font-semibold"
+                asChild
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download CV
+                <a href="/cv_afraoua_abdel.pdf" download="CV_Abdellah_Afraoua.pdf">
+                  <Download className="mr-2 h-5 w-5" />
+                  Download CV
+                </a>
               </Button>
               <Button
                 variant="outline"
