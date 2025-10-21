@@ -46,7 +46,7 @@ export const Contact = () => {
             <div className="space-y-2">
               <label htmlFor="message" className="text-sm font-medium text-foreground flex items-center gap-2">
                 <Send className="w-4 h-4 text-primary" />
-                Your Message 💌
+                Your Message 
               </label>
               <Textarea
                 id="message"
